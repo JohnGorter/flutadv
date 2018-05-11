@@ -1,0 +1,30 @@
+{
+  "name": "polymer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "help": "node printhelp.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "lite-server -c bs-config.json",
+    "presentation": "lite-server -c bs-config.json",
+    "generatelabs": "pdfgenerator ./_labs",
+    "updateslides": "node updateslides.js",
+    "push":"node push.js",
+    "all":"npm run generatelabs && npm run push && npm run updateslides && npm run presentation"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnGorter/polymer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnGorter/polymer/issues"
+  },
+  "homepage": "https://github.com/JohnGorter/polymer#readme",
+  "dependencies": {
+    "lite-server": "^2.2.0"
+  }
+}
