@@ -11,8 +11,8 @@
     "presentation": "lite-server -c bs-config.json",
     "generatelabs": "pdfgenerator ./_labs",
     "updateslides": "node updateslides.js",
-    "push":"node push.js",
-    "all":"npm run generatelabs && npm run push && npm run updateslides && npm run presentation"
+    "push": "node push.js",
+    "all": "npm run generatelabs && npm run push && npm run updateslides && npm run presentation"
   },
   "repository": {
     "type": "git",

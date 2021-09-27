@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Demo 3. Streams and Isolates",
+            "cwd": "_demos/Demo 3. Streams and Isolates",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Demo 3. Streams and Isolates (profile mode)",
+            "cwd": "_demos/Demo 3. Streams and Isolates",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}

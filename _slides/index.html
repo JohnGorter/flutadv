@@ -3,42 +3,63 @@
         <link rel="stylesheet" href="reveal/css/reveal.css">
         <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
         <link rel="stylesheet" href="https://webpack.github.io/docs/css/doc.css">
-        <link rel="stylesheet" href="infosupport/infosupport.css">
+        <link rel="stylesheet" href="iconica/iconica.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
     </head>
     <body>
+        <div id="logo">
+            <img src="./images/logo-iconica.svg" width=200>
+            <img src="./images/logo-edivision.png" width=150>
+        </div>
+        <div id="footer">
+               <table>
+                   <tr><td><i class="fab fa-twitter"></i></td><td class="last">@JohnGorter</td>
+                   <td><i class="far fa-envelope"></i></td><td class="last">john@iconica.nl</td>
+                   <td><i class="fas fa-globe"></i></td><td class="last">https://www.iconica.nl</td></tr>
+               </table>
+            </div>
         <div class="reveal">
             <div class="slides">
                    <section data-markdown="./Slides. 0. Introduction/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 0. Introduction/polymer.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 1. Web Components/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 2. Setups/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/creating-elements.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/creating-behaviors.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/element-lifecycles.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/extending-elements.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/data-binding.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/observers.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 3. Creating Elements/styling-elements.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 5. Using Elements/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 5. Using Elements/layouts.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 5. Using Elements/animation.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 5.5 Forms/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 6. Routing and LazyLoading/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 7. Offline Apps/onoffline.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 7. Offline Apps/serviceworker.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 7. Offline Apps/manifest.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 8. Persistence/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 4. Testing Elements/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 9. i18n/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 10. Tools/vulcanize.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 10. Security/google-signin.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
-                   <section data-markdown="./Slides. 10. Security/firebase-auth.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 1. Advanced Widgets/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 1. Advanced Widgets/custompainter.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 1. Advanced Widgets/customclipper.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 1. Advanced Widgets/slivers.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 3. Internals/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 3. Internals/layers.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 3. Internals/renderobject.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 4. Streams, Isolates and Zones/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 4. Streams, Isolates and Zones/streams.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 4. Streams, Isolates and Zones/isolates.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 4. Streams, Isolates and Zones/zones.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 5. Dependency Injection/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 5. Dependency Injection/get_it.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/changenotifier.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/provider.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/pure_bloc.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/cubeit.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/bloc.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 6. Data Architectures/getx.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/javascript.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/ffi.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/plugins.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/embedding.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/androidembedding.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 7. Interop/iosembedding.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
+                   <section data-markdown="./Slides. 8. Testing/intro.md" data-separator-vertical="^---$" data-separator-notes="Note:"></section>
            </div>
          </div>
         <script src="reveal/js/reveal.js"></script>
         <script src="reveal/lib/js/head.min.js"></script>
         <script>
            Reveal.initialize({
+            history: true,
+            hash:true,
                 dependencies: [
                     // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
                     { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
