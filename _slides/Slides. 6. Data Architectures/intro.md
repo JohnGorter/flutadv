@@ -10,5 +10,6 @@ We examine
 - bloc package
 - getx
 - riverpod
+- mvc
 
 

@@ -6,11 +6,14 @@ import 'dart:async';
 Future<void> main() async {
   final receivePort = ReceivePort();
   bool bFinish = false;
-  Timer? timer;
+  Timer timer;
 
+  print("start downloading the internet");
+  // downloadAndCompressTheInternet([Null, 10]);
+  // print("done downloading the internet");
   final isolate = await Isolate.spawn(
     downloadAndCompressTheInternet,
-    [receivePort.sendPort, 3],
+    [receivePort.sendPort, 10],
   );
 
   receivePort.listen((message) {
@@ -18,26 +21,27 @@ Future<void> main() async {
     if (message == -1) bFinish = true;
   });
 
-  timer = Timer.periodic(Duration(seconds: 1), (_) {
+  timer = Timer.periodic(Duration(seconds: 1), (t) {
     print("ting");
     if (bFinish) {
       receivePort.close();
       isolate.kill();
-      timer?.cancel();
+      t.cancel();
     }
   });
 }
 
 void downloadAndCompressTheInternet(List<Object> arguments) {
-  SendPort sendPort = arguments[0] as SendPort;
+  SendPort sendPort = null;
+  if (arguments[0] is SendPort) sendPort = arguments[0] as SendPort;
   int number = arguments[1] as int;
   int i = 0;
   while (true) {
-    if (i > 3) sendPort.send(-1);
-    else sendPort.send(42 + number);
+    if (i > number) if (sendPort != Null)
+      sendPort.send(-1);
+    else if (sendPort != Null) sendPort.send(42 + number);
     sleep(Duration(seconds: 2));
     i++;
-    
   }
 }
 

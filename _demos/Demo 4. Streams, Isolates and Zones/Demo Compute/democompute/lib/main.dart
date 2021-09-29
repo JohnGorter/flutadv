@@ -18,6 +18,7 @@ class MyApp extends StatefulWidget {
 
 bool doSomethingExpensive(int data) {
   print("Start");
+  print("process [${Isolate.current.debugName}]: working... $pid");
   int i = data;
   while (true) {
     i++;
@@ -27,7 +28,6 @@ bool doSomethingExpensive(int data) {
       i = 0;
       return true;
     }
-    //print("process [${Isolate.current.debugName}]: working... $i");
   }
 }
 
@@ -38,8 +38,8 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     // simulate a very expensive operation
-    doSomethingExpensive(0);
-    // compute(doSomethingExpensive, 0);
+    // doSomethingExpensive(0);
+    compute(doSomethingExpensive, 0);
 
     Timer.periodic(Duration(milliseconds: 500), (_) {
       setState(() {
@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    // print("process [${Isolate.current.debugName}]: building... ");
+    print("process [${Isolate.current.debugName}]: building...  $pid ");
     return Container(
         color: [
       Colors.red,

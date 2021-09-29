@@ -170,6 +170,16 @@ Streams created in this manner are broadcast by default
 - allows for multiple subscriptions
 
 ---
+### Listen syntax
+You can use the await for syntax everywhere you listen for stream data
+
+```
+  await for (String e in callGenerator()) {
+    print(e);
+  };
+```
+
+---
 <!-- .slide: data-background="url('images/demo.jpg')" --> 
 <!-- .slide: class="lab" -->
 ## Demo time!
