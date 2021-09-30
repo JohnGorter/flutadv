@@ -76,7 +76,7 @@ Demo. C Dart Interop
 ## Lab time!
 
 
---
+---
 ## Flutter with Dart FFI
 Dart doesn’t expose all the functionality you might need for a Flutter app
 - performance-critical code that would benefit from being written in a lower-level language like C, C++ or Rust.
@@ -149,9 +149,12 @@ Once you verify you installed NDK and CMake, you can use either VS Code or Andro
 - XCode command-line tools.
 
 ---
-### SetupOpen pubspec.yaml. In the dependencies: section, locate # // TODO: Add ffi package here and replace it with the following, making sure it’s indented the same as flutter:
+### Setup
 
+Open pubspec.yaml. In the dependencies: section, locate # // TODO: Add ffi package here and replace it with the following, making sure it’s indented the same as flutter:
+```
   ffi: ^1.0.0
+```
 
 This code lets you use Dart FFI. Now you’ll add your first native function.
 
