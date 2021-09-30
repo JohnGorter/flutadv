@@ -1,7 +1,7 @@
-# Lab CustomPainter
+# Lab JavaScript Interop
 
 ---
-### charts
+### Page LifeCycle and LocalStorage
 Time: 45 minutes
 
 --
